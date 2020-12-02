@@ -1,0 +1,996 @@
+/** 
+Template Name: UI-HERO - HTML Template
+Template URL: http://coderitsoltion.com
+Author: Coder IT Solution
+Author URI: http://coderitsoltion.com
+Description:UI-HERO HTML Template
+Keywords: html,css,js
+
+**/
+
+/*
+
+	font-family: 'Yellowtail', cursive;
+	font-family: 'Gotham Book';
+	font-family: 'Gotham Bold';
+	font-family: 'Gotham Mediam';
+	font-family: 'Gnuolane Rg';
+
+*/
+	
+
+ 	  /*****************************/
+	 /******* Download Font *******/
+	/*****************************/
+
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../font/HomepageBaukasten-Bold.woff2') format('woff2'),
+        url('../font/HomepageBaukasten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../font/HomepageBaukasten-Book.woff2') format('woff2'),
+        url('../font/HomepageBaukasten-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HomepageBaukasten';
+    src: url('../font/HomepageBaukasten-Bold.woff2') format('woff2'),
+        url('../font/HomepageBaukasten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HomepageBaukasten Book';
+    src: url('../font/HomepageBaukasten-Book.woff2') format('woff2'),
+        url('../font/HomepageBaukasten-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gnuolane Rg';
+    src: url('../font/GnuolaneRg-Regular.woff2') format('woff2'),
+        url('../font/GnuolaneRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Mediam';
+    src: url('../font/Gotham-Medium.woff2') format('woff2'),
+        url('../font/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+ 	  /************************/
+	 /******* Main CSS *******/
+	/************************/
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Gotham Book';
+	overflow-x:hidden; 
+}
+ul{
+ 	list-style:none;
+ 	padding: 0;
+ 	margin: 0;
+}
+a{
+ 	text-decoration: none;
+ 	display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+ 	margin: 0px;
+}
+.owl-dot:focus {
+	outline: none !important;
+}
+
+button:focus {
+	outline: none;
+}
+
+	  /************************/
+	 /****** Default CSS *****/
+	/************************/
+
+.btn-sty-1 {
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: 'Gotham Bold';
+	background: #ff4b5a;
+	padding: 10px 20px;
+	padding: 1rem 2rem;
+	display: inline-block;
+	border-radius: .2rem;
+	border-bottom: 2px solid transparent;
+	border-bottom:.2rem solid transparent;
+	-webkit-transition: 1s;
+	transition: 1s
+
+}
+.btn-sty-2:hover{
+	color:#fff;
+	border-bottom: 2px solid #188947;
+	border-bottom:.2rem solid #188947;
+}
+.btn-sty-1:hover{
+	color:#fff;
+	border-bottom: 2px solid #e33d4b;
+	border-bottom:.2rem solid #e33d4b;
+}
+.btn-sty-2 {
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: 'Gotham Bold';
+	background: #1fab5a;
+	padding: 10px 20px;
+	padding: 1rem 2rem;
+	display: inline-block;
+	border-radius: .2rem;
+	border-bottom: 2px solid transparent;
+	border-bottom:.2rem solid transparent;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+	
+	
+	  /************************/
+	 /****** Header CSS ******/
+	/************************/
+
+	/*  Header Area Start */
+
+.header-area{
+	background: url(../images/banners/header-banner.jpg) no-repeat scroll 0 0 / 100% 100%;
+	position: relative;
+	z-index: 1;
+}
+.header-area:after{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #323a45;
+	opacity: 95%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
+	z-index: -1;	
+}
+.header-top{
+	padding: 20px 0;
+	padding: 2rem 0;
+}
+.header-logo h2{
+	font-family: 'Yellowtail', cursive;
+	font-size: 48px;
+	font-size: 4.8rem;
+	color: #fff;
+}
+.nav-icon {
+	font-size: 20px;
+	font-size: 2rem;
+	color: #fff;
+	padding: 3px 10px;
+	padding: .3rem 1rem;
+	border: 1px solid #fff;
+	border-radius: .5rem;
+	display: none;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.header-menu ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:end;
+	    -ms-flex-pack:end;
+	        justify-content:end;
+}
+.header-menu ul li a{
+	color:#FFF;
+	font-family: 'Gotham Book';
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-left: 40px;
+	margin-left:4rem;
+	display: inline-block;
+	padding: 5px 10px;
+	padding:.5rem 1rem;
+	border-radius: 50px;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.header-menu ul li  a.active,
+.header-menu ul li:hover a{
+	background: #ff4b5a;
+}
+
+.header-details{
+	padding: 30px 0;
+	padding: 3rem 0;
+}
+.header-left{
+	width: 70%;
+	margin:0 auto;
+
+}
+.header-left img{
+	width:100%;
+	height: 100%;
+}
+.header-right {
+	padding: 120px 0;
+	padding: 12rem 0;
+	color: #fff;
+}
+.header-right h3{
+	font-family: 'Gotham Book';
+	font-size: 40px;
+	font-size: 4rem;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+.header-right h4{
+	font-family: 'Gotham Book';
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin-bottom: 50px;
+	margin-bottom: 5rem;
+}
+.header-content p{
+	font-family: 'Gotham Book';
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.header-content p span {
+	width: 10px;
+	width: 1rem;
+	height: 10px;
+	height: 1rem;
+	line-height: 10px;
+	line-height: 1rem;
+	border-radius: 1rem;
+	background:#ff4c5b;
+	display: inline-block;
+	margin-right: 10px;
+	margin-right: 1rem;
+	border: .3px solid #096297;
+}
+.header-content h2{
+	font-size: 40px;
+	font-size: 4rem;
+	margin-top: 40px;
+	margin-top: 4rem;
+}
+.header-content h2 span{
+	color:#29af61;
+}
+.header-single-item{
+	position: absolute;
+}
+.header-details .owl-nav {
+	font-size: 50px;
+	font-size: 5rem;
+	color: #fff;
+}
+.header-single-item{
+	position: relative;
+}
+
+.header-details .owl-prev {
+	position: absolute;
+	top:40%;
+	left: -5%;
+}
+
+.header-details .owl-next{
+	position: absolute;
+	top:40%;
+	right: -5%;
+}
+.header-details.owl-carousel .owl-nav button.owl-next, .header-details.owl-carousel .owl-nav button.owl-prev, .owl-carousel button {
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 0 20px !important;
+	padding: 0 2rem !important;
+}
+.header-details.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent;
+}
+
+.header-details.owl-theme .owl-dots .owl-dot span {
+	background: #23282f;
+}
+
+.header-details.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #6d7d92;
+}
+
+	/*  Header Area End */
+
+
+
+	  /************************/
+	 /****** Vedio CSS *******/
+	/************************/
+
+	/* Vedio Area Start */
+
+.vedio-area{
+	padding: 100px 0;
+	padding: 10rem 0;
+	background: #f2f2f2;
+}
+.munitor-img{
+	width:100%;
+	height: auto;
+}
+.munitor-img img{
+	width: 100%;
+	height: 100%;
+}
+.vimeo-details h2,
+.munitor-details h2{
+	font-family: 'Gotham Bold';
+	font-size: 30px;
+	font-size: 3rem;
+	color:#444e5d;
+}
+.munitor-details h3{
+	font-size: 16px;
+	font-size: 1.6rem;
+	color:#ff4b5a;
+	margin: 30px 0 15px 0;
+	margin:3rem 0 1.5rem 0;
+}
+.vimeo-details p,
+.munitor-details  p{
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 30px;
+	line-height: 3rem;
+	color:#4d5866;
+}
+.munitor-button{
+	margin-top: 40px;
+	margin-top: 4rem;
+}
+.vimeo-details h3{
+	font-size: 16px;
+	font-size: 1.6rem;
+	color:#1fab5a;
+	margin: 30px 0 15px 0;
+	margin:3rem 0 1.5rem 0;
+}
+.vimeo-vedio {
+	text-align: center;
+}
+.vimeo-padding{
+	padding-top: 50px;
+	padding-top: 5rem;
+}
+
+	/* Vedio Area End */
+
+
+
+	  /******************************/
+	 /****** Testimonial CSS *******/
+	/******************************/
+
+	/* Testimonila Area Start */
+
+.testimonial-area{
+	padding: 50px 0;
+	padding: 5rem 0;
+	background: #edebeb;
+}
+.testimonials-details{
+	text-align: center;
+}
+.testimonials-details i {
+	color: #65837e;
+	font-size: 50px;
+	font-size: 5rem;
+}
+.testimonials-details h2{
+	font-size: 40px;
+	font-size: 4rem;
+	color: #746f6f;
+	margin: 40px 0;
+	margin:4rem 0;
+}
+.testimonial-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.clint-detail {
+	margin-left: 20px;
+	margin-left: 2rem;
+}
+.clint-detail h3{
+	color:#6a6565;
+	font-size: 20px;
+	font-size: 2rem;
+}
+.clint-detail h4{
+	color:#6a6565;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-top: 5px;
+	margin-top: .5rem;
+}
+
+	/* Testimonila Area End */
+
+
+
+
+
+	  /******************************/
+	 /******      Flat CSS   *******/
+	/******************************/
+
+	/*   Flat Area Start   */
+
+.flat-area {
+	padding: 80px 0 20px 0;
+	padding: 8rem 0 2rem 0;
+	background: #f2f2f2;
+}
+.flat-left{
+	max-width: 85%;
+}
+.flat-content h3{
+	font-family: 'Gotham Bold';
+	font-size: 30px;
+	font-size: 3rem;
+	color:#444e5d;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+
+.flat-content p{
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #4c5662;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+
+.flat-left hr:not([size]) {
+	height: 1px;
+	margin: 30px 0;
+	margin: 3rem 0;
+}
+.flat-item ul li i{
+	color:#1fab5a;
+	margin-right: 10px;
+	margin-right: 1rem;
+}
+.flat-item ul li {
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #4c5662;
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+.flat-left h2{
+	font-size: 30px;
+	font-size: 3rem;
+	color:#323a45;
+	margin: 50px 0;
+	margin:5rem 0;
+}
+
+.flat-left h2 span{
+	font-family: 'Gotham Bold';
+}
+.flat-img{
+	width:70%;
+	margin: 0 auto;
+}
+.flat-img img{
+	width:100%;
+}
+
+
+	/*   Flat Area End   */
+
+
+
+
+	  /******************************/
+	 /******   Clients CSS   *******/
+	/******************************/
+
+
+	/*  Clients Area Start   */
+.clients-area{
+	background: #faf8f8;
+}
+
+.section-title{
+	text-align: center;
+	padding-top: 80px;
+	padding-top: 8rem;
+}
+
+.section-title h2{
+	font-family: 'Gotham Bold';
+	font-size: 30px;
+	font-size: 3rem;
+	color:#444e5d;
+}
+
+.section-title h3 {
+	color: #606e80;
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-top: 5px;
+	margin-top: .5rem;
+}
+.clients-img{
+	padding: 50px 0 100px 0;
+	padding: 5rem 0 10rem 0;
+	width: 100%;
+}
+.clients-img ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+	/*   Clients Area End   */
+
+
+
+	  /******************************/
+	 /******   Table CSS     *******/
+	/******************************/
+
+
+	/*    Table Area Start   */
+
+.table-area{
+	background: #f1f1f1;
+}
+.table-single-item {
+	text-align: center;
+	margin: 80px 0;
+	margin: 8rem 0;
+	border: 1px solid #a1a1a1;
+}
+
+.table-details h2{
+	font-family: 'Gotham Mediam';
+	font-size: 30px;
+	font-size: 3rem;
+	color:#5a677b;
+}
+.table-details {
+	padding: 10px 0;
+	padding:1rem 0;
+	border-bottom: 1px solid #a1a1a1;
+}
+.table-area .col-md-4 {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: 30.333%;
+}
+.table-details h3{
+	font-size: 20px;
+	font-size: 2rem;
+	color:#999999;
+}
+.table-items ul{
+	padding: 40px 0;
+	padding: 4rem 0;
+}
+.table-items ul	li {
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #999999;
+	margin-bottom: 5px;
+	margin-bottom: .5rem;
+}
+.table-items ul	li span{
+	font-family: 'Gotham Mediam';
+}
+.table-button{
+	padding-bottom: 50px;
+	padding-bottom: 5rem;
+}
+
+.table-button .btn-sty-2{
+	padding: 10px 60px;
+	padding: 1rem 6rem;
+}
+
+
+	/*    Table Area End   */
+
+
+
+
+
+	  /******************************/
+	 /******   Work CSS     ********/
+	/******************************/
+
+
+	/*    Work Area Start   */
+.work-area{
+	background: #fbf8f8;
+	padding-bottom: 80px;
+	padding-bottom: 8rem;
+}
+.work-title {
+	width: 90%;
+	margin: auto;
+	padding: 50px 0;
+	padding: 5rem 0;
+}
+.work-title h2{
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	text-align: center;
+	font-size: 30px;
+	font-size: 3rem;
+	font-family: 'Gotham Bold';
+	color:#444e5d;
+	
+}
+.work-items {
+	-webkit-column-count: 3;
+	   -moz-column-count: 3;
+	        column-count: 3;
+	-webkit-column-gap: 1.5rem;
+	   -moz-column-gap: 1.5rem;
+	        column-gap: 1.5rem;
+}
+.single-work{
+	width:100%;
+	height: 300px;
+	height: 30rem;
+}
+.single-work img{
+	width: 100%;
+	height: 100%;
+}
+
+.work-single-item{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
+}
+
+.work-overly{
+	position: absolute;
+	top:0;
+}
+.work-overly {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff4b5a;
+	opacity: .78;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=78)";
+	visibility: hidden;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.work-single-item:hover .work-overly{
+	top:0;
+	visibility: visible;
+}	
+
+.work-content {
+	text-align: center;
+	margin: 15px;
+	margin: 1.5rem;
+	border: 1px solid #fff;
+	color:#fff;
+	height: 90%;
+}
+.work-content h2{
+	font-family: 'Gotham Bold';
+	font-size: 20px;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-top: 1rem;
+}
+.work-content h3{
+	font-size: 20px;
+	font-size: 2rem;
+	margin: 5px 0;
+	margin:.5rem 0;
+}
+.work-content a i{
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.work-content a i {
+	font-size: 30px;
+	font-size: 3rem;
+	background: #fff;
+	width: 70px;
+	width: 7rem;
+	height: 70px;
+	height: 7rem;
+	line-height: 70px;
+	line-height: 7rem;
+	border-radius: 7rem;
+	color: #313943;
+	margin: 50px 0;
+	margin: 5rem 0 ;
+}
+
+
+
+	/*    Work Area End   */
+
+
+
+
+	  /******************************/
+	 /******  Social CSS    ********/
+	/******************************/
+
+
+
+	/*   Social Area Start   */
+
+.social-area{
+	background: url(../images/banners/social-banner.jpg) no-repeat scroll 0 0 / 100% 100%;
+	padding: 80px 0;
+	padding: 8rem 0;
+	position: relative;
+	z-index: 1;
+}
+
+.social-area:after{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #909499;
+	opacity: 50%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
+	z-index: -1;	
+}
+.social-top{
+	text-align: center;
+}
+.social-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #FFF;
+	padding: 40px 0;
+	padding: 4rem 0;
+}
+.social-top i {
+	font-size: 50px;
+	font-size: 5rem;
+	color: #fff;
+}
+.social-title  h2{
+	font-family: 'Yellowtail', cursive;
+	font-size: 30px;
+	font-size: 3rem;
+	margin-right: 10px;
+	margin-right: 1rem;
+}
+.social-title  h3{
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.social-bottom {
+	text-align: center;
+	color: #ffff;
+	max-width: 70%;
+	margin: auto;
+}
+.social-sindle-item{
+	position: relative;
+}
+.social-bottom p {
+	font-family: 'Gotham Mediam';
+	font-size: 20px;
+	font-size: 2rem;
+	padding-bottom: 30px;
+	padding-bottom: 3rem;
+}
+
+.social-item .owl-nav {
+	font-size: 30px;
+	font-size: 3rem;
+	color: #fff;
+}
+.social-item.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background: transparent !important;
+}
+.social-item .owl-prev {
+	position: absolute;
+	top: 60%;
+	left: 12%;
+}
+.social-item .owl-next {
+	position: absolute;
+	top: 60%;
+	right: 12%;
+}
+
+	/*   Social Area End   */
+
+
+	  /******************************/
+	 /******  Contack CSS   ********/
+	/******************************/
+
+	/* Contack Area Start*/
+
+.contack-area{
+	padding: 80px;
+	padding: 8rem;
+	background: url('../images/banners/contack-banner.jpg') no-repeat scroll 0 0 / 100% 100% ;
+	z-index: 1;
+	position: relative;
+}
+.contack-area:after{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background: #323a45;
+	opacity: 96%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
+	z-index: -1;
+
+}
+.contack-details {
+	text-align: center;
+	max-width: 60%;
+	margin: auto;
+}
+.contack-details h2{
+	font-family: 'Gotham Bold';
+	font-size: 30px;
+	font-size: 3rem;
+	color:#fff;
+	margin-bottom: 30px;
+	margin-bottom: 3rem;
+}
+.contack-details p{
+	color:#dad9d9;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.contack-button {
+	padding-top: 40px;
+	padding-top: 4rem;
+}
+
+	/* Contack Area End */
+
+
+
+
+
+	  /******************************/
+	 /******   Footer CSS   ********/
+	/******************************/
+
+
+
+	/* Footer Area Start */
+
+.footer-area{
+	background:#2a3039;
+	padding: 30px 0;
+	padding:3rem 0; 
+}
+
+.footer-left ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.footer-left ul li a i {
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: #647182;
+	border: 1px solid #647182;
+	width: 30px;
+	width: 3rem;
+	height: 30px;
+	height: 3rem;
+	line-height: 30px;
+	line-height: 3rem;
+	text-align: center;
+	border-radius: 50px;
+	margin-right: 10px;
+	margin-right: 1rem;
+	-webkit-transition: 1s;
+	transition: 1s;
+}	
+.footer-left ul li a:hover i {
+	color: #fff;
+	border: 1px solid #fff;
+}
+.footer-left ul li a {
+	color: #dad9d9;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: 'Gotham Mediam';
+}
+
+.footer-right h2 {
+	text-align: right;
+	color: #dad9d9;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: 'Gotham Mediam';
+}
+
+.footer-right h2 i{
+	color: #647182;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+	/* Footer Area End */

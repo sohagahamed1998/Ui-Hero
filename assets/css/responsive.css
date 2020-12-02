@@ -1,0 +1,261 @@
+@media all and (min-width: 992px){
+	.header-menu ul{
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+}
+
+@media all and (max-width: 991px){
+
+	.header-menu ul{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		display: none;
+	}
+	.header-menu ul li a{
+		margin:.5rem 0;
+	}
+	.header-logo {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.nav-icon{
+		display: block;
+	}
+	.nav-icon:hover{
+		color:#ff4b5a;
+	}
+	.header-right {
+	padding: 4rem 0;
+	}
+	.header-content h2 {
+		margin-top: 3rem;
+	}
+	.header-left {
+		width: 50%;
+	}
+	.testimonials-details h2 {
+		font-size: 3rem;
+		margin: 2rem 0;
+	}
+	.testimonials-details i {
+		font-size: 3rem;
+	}
+	.table-area .col-md-4 {
+		width: 32.333%;
+	}
+	.table-single-item {
+		margin: 4rem 0;
+	}
+	.table-area .col-md-4 {
+		width: 34.333%;
+	}
+	.col-md-4.ss {
+		margin: 0 auto;
+	}
+	.work-items {
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	        column-count: 2;
+	}
+	.contack-details {
+		max-width: 80%;
+	}
+}
+
+@media all and (max-width: 768px){
+	.header-right h3 {
+		font-size: 3rem;
+	}
+	.header-content h2{
+	font-size: 3rem;
+	}
+	.munitor-button {
+		margin: 2rem 0;
+	}
+	.vimeo-vedio {
+		margin-top: 5rem;
+	}
+	.testimonials-details h2 {
+		font-size: 2rem;
+	}
+	.flat-img {
+		padding-top: 5rem;
+	}
+	.section-title {
+		padding-top: 3rem;
+	}
+	.clients-img {
+		padding: 2rem 0 3rem 0;
+		width: 100%;
+	}
+	.table-area .col-md-4 {
+		width: 50.333%;
+		margin: 0 auto;
+	}
+	.work-items {
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		        column-count: 1;
+	}
+	.social-area {
+		padding: 4rem 0;
+	}
+	.social-title {
+	padding: 1rem 0;
+	}
+	.social-bottom {
+		max-width: 90%;
+	}
+	.social-item .owl-prev {
+		top: 50%;
+		left: 0%;
+	}
+	.social-item .owl-next {
+		top: 50%;
+		right: 0%;
+	}
+	.social-bottom p {
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+	}
+	.contack-details h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.contack-details {
+		max-width: 90%;
+	}
+	.contack-area {
+		padding: 4rem;
+	}
+	.contack-button {
+		padding-top: 2rem;
+	}
+	.footer-right h2 {
+		text-align: center;
+		font-size: 1.4rem;
+		margin-top: 1rem;
+	}
+	.footer-left ul {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
+
+@media all and (max-width: 576px){
+	.header-left {
+		width: 45%;
+	}
+	.header-details .owl-prev {
+		visibility: hidden;
+	}
+	.header-details .owl-next{
+		visibility: hidden;
+	}
+	.header-details {
+		padding: 2rem;
+	}
+	.header-title {
+		text-align: center;
+	}
+	.header-right h3 {
+		font-size: 2rem;
+	}
+	.header-right h4 {
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+	}
+	.header-content {
+		text-align: center;
+	}
+	.header-right {
+		padding: 2rem 0;
+	}
+	.header-content h2 {
+		font-size: 2rem;
+	}
+	.munitor-details {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.vimeo-details h2, .munitor-details h2 {
+		font-size: 2rem;
+	}
+	.vimeo-details h3,
+	.munitor-details h3 {
+		margin: 1.5rem 0 .5rem 0;
+	}
+	.munitor-button {
+		margin-top: 2rem;
+	}
+	.munitor-img {
+		width: 75%;
+		margin: 0 auto auto;
+	}
+	.vedio-area {
+		padding: 5rem 0;
+	}
+	.vimeo-details {
+		text-align: center;
+	}
+	.vimeo-vedio iframe {
+		width: 300px;
+		height: 250px;
+	}
+	.testimonials-details i {
+		font-size: 2rem;
+	}
+	.flat-left {
+		max-width: 100%;
+	}
+	.flat-content h3 {
+		font-size: 2rem;
+	}
+	.flat-left h2 {
+		font-size: 2rem;
+		margin: 2rem 0;
+	}
+	.flat-area {
+	padding: 5rem 0 0rem 0;
+	}
+	.flat-button {
+		text-align: center;
+	}
+	.section-title h2 {
+		font-size: 2rem;
+	}
+	.table-area .col-md-4 {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.contack-details h2 {
+		font-size: 1.5rem;
+	}
+	.contack-details {
+		max-width: 100%;
+	}
+	.contack-details p {
+		font-size: 1.4rem;
+	}
+	.work-title {
+		padding: 3rem 0;
+	}
+	.work-title h2 {
+	margin-bottom: 2rem;
+	}
+	.work-area {
+		padding-bottom: 3rem;
+	}
+}

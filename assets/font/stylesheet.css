@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'HomepageBaukasten';
+    src: url('HomepageBaukasten-Bold.woff2') format('woff2'),
+        url('HomepageBaukasten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HomepageBaukasten Book';
+    src: url('HomepageBaukasten-Book.woff2') format('woff2'),
+        url('HomepageBaukasten-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HomepageBaukasten';
+    src: url('HomepageBaukasten-Bold.woff2') format('woff2'),
+        url('HomepageBaukasten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HomepageBaukasten Book';
+    src: url('HomepageBaukasten-Book.woff2') format('woff2'),
+        url('HomepageBaukasten-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gnuolane Rg';
+    src: url('GnuolaneRg-Regular.woff2') format('woff2'),
+        url('GnuolaneRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Medium.woff2') format('woff2'),
+        url('Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
